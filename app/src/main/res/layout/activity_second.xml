@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button android:text="show" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="show"/>
+    <Button android:text="showWithMaskType" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showWithMaskType"/>
+    <Button android:text="showWithStatus" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showWithStatus"/>
+    <Button android:text="showInfoWithStatus" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showInfoWithStatus"/>
+    <Button android:text="showSuccessWithStatus" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showSuccessWithStatus"/>
+    <Button android:text="showErrorWithStatus" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showErrorWithStatus"/>
+    <Button android:text="showWithProgress" android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            android:onClick="showWithProgress"/>
+</LinearLayout>
