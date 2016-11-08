@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.adorkable.iosdialog.ActionSheetDialog;
 import com.adorkable.iosdialog.ActionSheetDialog.OnSheetItemClickListener;
 import com.adorkable.iosdialog.ActionSheetDialog.SheetItemColor;
-import com.adorkable.iosdialog.AlertDialog;
+import com.adorkable.iosdialog.AlertiOSDialog;
 
 public class MainActivity extends Activity implements OnClickListener {
     private Button btn1;
@@ -206,7 +206,7 @@ public class MainActivity extends Activity implements OnClickListener {
                                 }).show();
                 break;
             case R.id.btn4:
-                new AlertDialog(MainActivity.this).builder().setTitle("退出当前账号")
+                new AlertiOSDialog(MainActivity.this).builder().setTitle("退出当前账号")
                         .setMsg("再连续登陆15天，就可变身为QQ达人。退出QQ可能会使你现有记录归零，确定退出？")
                         .setPositiveButton("确认退出", new OnClickListener() {
                             @Override
@@ -221,7 +221,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 }).show();
                 break;
             case R.id.btn5:
-                new AlertDialog(MainActivity.this).builder()
+                new AlertiOSDialog(MainActivity.this).builder()
                         .setMsg("你现在无法接收到新消息提醒。请到系统-设置-通知中开启消息提醒")
                         .setNegativeButton("确定", new OnClickListener() {
                             @Override

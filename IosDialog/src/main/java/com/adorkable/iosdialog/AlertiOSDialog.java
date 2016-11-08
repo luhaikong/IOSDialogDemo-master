@@ -15,7 +15,7 @@ import android.widget.TextView;
 /**
  * Created by liuqiang on 10/23/15.
  */
-public class AlertDialog {
+public class AlertiOSDialog {
     private Context context;
     private Dialog dialog;
     private LinearLayout lLayout_bg;
@@ -30,14 +30,14 @@ public class AlertDialog {
     private boolean showPosBtn = false;
     private boolean showNegBtn = false;
 
-    public AlertDialog(Context context) {
+    public AlertiOSDialog(Context context) {
         this.context = context;
         WindowManager windowManager = (WindowManager) context
                 .getSystemService(Context.WINDOW_SERVICE);
         display = windowManager.getDefaultDisplay();
     }
 
-    public AlertDialog builder() {
+    public AlertiOSDialog builder() {
         // 获取Dialog布局
         View view = LayoutInflater.from(context).inflate(
                 R.layout.view_alertdialog, null);
@@ -66,7 +66,7 @@ public class AlertDialog {
         return this;
     }
 
-    public AlertDialog setTitle(String title) {
+    public AlertiOSDialog setTitle(String title) {
         showTitle = true;
         if ("".equals(title)) {
             txt_title.setText("标题");
@@ -76,7 +76,7 @@ public class AlertDialog {
         return this;
     }
 
-    public AlertDialog setMsg(String msg) {
+    public AlertiOSDialog setMsg(String msg) {
         showMsg = true;
         if ("".equals(msg)) {
             txt_msg.setText("内容");
@@ -86,13 +86,13 @@ public class AlertDialog {
         return this;
     }
 
-    public AlertDialog setCancelable(boolean cancel) {
+    public AlertiOSDialog setCancelable(boolean cancel) {
         dialog.setCancelable(cancel);
         return this;
     }
 
-    public AlertDialog setPositiveButton(String text,
-                                         final View.OnClickListener listener) {
+    public AlertiOSDialog setPositiveButton(String text,
+                                            final View.OnClickListener listener) {
         showPosBtn = true;
         if ("".equals(text)) {
             btn_pos.setText("确定");
@@ -109,8 +109,8 @@ public class AlertDialog {
         return this;
     }
 
-    public AlertDialog setNegativeButton(String text,
-                                         final View.OnClickListener listener) {
+    public AlertiOSDialog setNegativeButton(String text,
+                                            final View.OnClickListener listener) {
         showNegBtn = true;
         if ("".equals(text)) {
             btn_neg.setText("取消");
